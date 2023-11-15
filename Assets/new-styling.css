@@ -1,1 +1,162 @@
+*  {
+    box-sizing: border-box;
+    margin: 0px;
+    grid-auto-flow: column;
+}
 
+/* Header and Navigation */
+
+header  {
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    background-color: grey;
+    font-size: 25px;
+}
+
+#name  {
+    display:block;
+    color: white;
+}
+
+header nav ul {
+display: block;
+position: relative;
+list-style-type: none;
+height: auto;
+margin: auto;
+font-size: 90%;
+}
+
+header li  {
+    float:right;
+    position: relative;
+    padding: 5px;
+}
+
+header a  {
+    display:block;
+    color:grey;
+    text-align: center;
+}
+
+header a:hover  {
+    background-color: rgb(128, 128, 128);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Banner Image */
+
+.banner  {
+    position: flex;
+    height: 300px;
+    width: 100%;
+    top: 30px;
+    overflow-wrap: normal;
+    object-fit: none;
+    background-image: url(./banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* About Me Section */
+
+.grid-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 33% 66%;
+    background-color: gray;
+    padding: 10px;
+}
+.grid-item-left {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.grid-item-right {
+    background-color: gray;
+    color: white;
+    border-left: 2px solid white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*Work Section */
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    size: 60px;
+    line-height: 150px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}  
+.work-grid {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 66% 33%;
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    size: 60px;
+}
+
+.work-left  {
+    display: inline-flexbox;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0px;
+    height: 600px;
+    width:100%;
+    object-fit: none;
+    background-image: url(./Screenshot.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    size: 50px;
+    text-decoration: none;
+}
+
+.work-left:hover  {
+    box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
+    transition: all 0.2s ease-in-out;
+}
+
+p  {
+    color: white;
+    size: 20px
+}
+
+.work-right  {
+    border: 1px solid black;
+    background-color: gray;
+    display: block;
+    color: white;
+    height: 600px;
+    width: 66%;
+    padding: 20px;
+    font-size: 20px;
+    text-align: right;
+    float: right;
+    background-image: url(./render.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.work-right:hover  {
+    box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
+    transition: all 0.2s ease-in-out;
+}
+/* Footer */
+
+footer  {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    height: auto;
+    margin: auto;
+}
